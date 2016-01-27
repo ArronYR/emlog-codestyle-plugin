@@ -1,0 +1,13 @@
+/**后台**/
+.codestyle-container{clear:both;overflow:hidden;}
+.codestyle-container ul{padding:0px;border:1px solid #bbb;}
+.codestyle-container ul li{clear:both;overflow:hidden;}
+.codestyle-container ul li{line-height:40px;height:40px;border-bottom:1px solid #bbb;}
+.codestyle-container ul li h4{float:left;padding:0px;margin:0px;border-right:1px solid #bbb; width:120px; text-align:center;}
+.codestyle-container ul li p{border-left:1px solid #bbb;float:left;padding-left:5px;margin:0px;}
+.codestyle-container ul .one{float:left;width:240px; line-height:40px;}
+.codestyle-container ul .one input{height:26px;line-height:26px;border:1px solid #bbb;margin:5px;}
+.codestyle-container ul .radio{float:left;width:120px;}
+.codestyle-container ul .radio input{height:26px;line-height:26px;margin:5px;overflow:hidden; float:left;}
+.codestyle-container ul .radio label{float:left;}
+.codestyle-container ul .sl{margin:5px; font-size:13px; line-height:22px;}
