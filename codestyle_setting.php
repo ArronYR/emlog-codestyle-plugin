@@ -4,9 +4,9 @@
  */
 
 !defined('EMLOG_ROOT') && exit('access deined!');
+require_once 'codestyle_config.php';
 
 function plugin_setting(){
-    require_once 'codestyle_config.php';
     $style = $_POST["style"]=="" ? "default": $_POST["style"];
     $numlines = $_POST["numlines"]=="" ? "no": $_POST["numlines"];
     $jquery = $_POST["jquery"]=="" ? "no" : $_POST["jquery"];
@@ -23,7 +23,7 @@ $config = array(
 }
 
 function plugin_setting_view(){
-    require_once 'codestyle_config.php';
+    global $config;
     $styles = array('default', 'desert', 'doxy', 'obsidian', 'sunburst');
 ?>
 
@@ -94,7 +94,7 @@ function plugin_setting_view(){
                     &nbsp;&nbsp;&nbsp;&nbsp;修改正在使用的主题下的 footer.php ,在body标签结束之前加上。<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;查看当前插件挂载点及说明：<a href="http://wiki.emlog.net/doku.php?id=plugindev" target="_blank">wiki.emlog.net/doku.php?id=plugindev</a><br/>
                     2、默认使用default样式，代码行号开启；<br/>
-                    3、修改后上面选择可能不会及时更改，请点击左边菜单栏刷新。
+                    3、修改后上面选择可能不会及时更改，请点击左边菜单栏多刷新几遍。
                 </div>
             </ul>
             <input type="submit" class="button" name="submit" value="保存设置" />

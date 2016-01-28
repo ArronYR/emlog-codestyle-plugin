@@ -12,10 +12,26 @@ Author URL: http://www.helloarron.com/
 
 !defined('EMLOG_ROOT') && exit('access deined!');
 
+require_once 'codestyle_config.php';
+
 function codestyle(){
-    require_once 'codestyle_config.php';
+    global $config;
 ?>
     <link href="<?php echo BLOG_URL;?>content/plugins/codestyle/css/prettify-<?php echo $config["style"];?>-theme.css" rel="stylesheet" type="text/css" />
+    <?php if($config["jquery"] == 'yes'): ?>
+    <script src="<?php echo BLOG_URL;?>/include/lib/js/jquery/jquery-1.7.1.js" type="text/javascript"></script>
+    <?php endif;?>
+    <script src="<?php echo BLOG_URL;?>/content/plugins/codestyle/js/prettify.js" type="text/javascript"></script>
+    <script src="<?php echo BLOG_URL;?>/content/plugins/codestyle/js/codestyle.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            <?php if($config["numlines"] == 'yes'): ?>
+                numlines();
+            <?php else:?>
+                noNumlines();
+            <?php endif;?>
+        });
+    </script>
 
 <?php }?>
 
@@ -25,6 +41,9 @@ function codestyle_menu(){
 }?>
 
 <?php
+    if (condition) {
+        # code...
+    }
     addAction('index_footer','codestyle');
     addAction('adm_sidebar_ext', 'codestyle_menu');
 ?>

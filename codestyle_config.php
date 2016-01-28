@@ -1,4 +1,5 @@
 <?php
+global $config;
 $config = array(
     "style" => "default",
     "numlines" => "yes",
