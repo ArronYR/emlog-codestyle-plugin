@@ -12,7 +12,12 @@ Author URL: http://www.helloarron.com/
 
 !defined('EMLOG_ROOT') && exit('access deined!');
 
+function codestyle(){
+    require_once 'codestyle_config.php';
 ?>
+    <link href="<?php echo BLOG_URL;?>content/plugins/codestyle/css/prettify-<?php echo $config["style"];?>-theme.css" rel="stylesheet" type="text/css" />
+
+<?php }?>
 
 <?php
 function codestyle_menu(){
@@ -20,5 +25,6 @@ function codestyle_menu(){
 }?>
 
 <?php
+    addAction('index_footer','codestyle');
     addAction('adm_sidebar_ext', 'codestyle_menu');
 ?>

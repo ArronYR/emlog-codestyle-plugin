@@ -22,12 +22,12 @@ pre.prettyprint, code.prettyprint {
     font-weight: bold;
     font-size: 9pt;
     background-color: #0f0f0f;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    border-radius: 8px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
 }  /*  background is black (well, just a tad less dark )  */
 
 pre.prettyprint {
@@ -41,10 +41,10 @@ pre.prettyprint a, code.prettyprint a {
    text-decoration:none;
 }
 /* Specify class=linenums on a pre to get line numbering; line numbers themselves are the same color as punctuation */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #8B8970; } /* IE indents via margin-left */
-li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #8B8970; background:transparent; } /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: decimal; background:transparent; }
 /* Alternate shading for lines */
-li.L1,li.L3,li.L5,li.L7,li.L9 { }
+li.L1,li.L3,li.L5,li.L7,li.L9 { background:transparent; }
 
 /* print is mostly unchanged from default at present  */
 @media print {

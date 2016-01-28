@@ -1,5 +1,13 @@
 /* desert scheme ported from vim to google prettify */
-pre.prettyprint { display: block; background-color: #333 }
+pre.prettyprint, code.prettyprint {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+pre.prettyprint { display: block; background-color: #333; padding: 5px 0; }
 pre .nocode { background-color: none; color: #000 }
 pre .str { color: #ffa0a0 } /* string  - pink */
 pre .kwd { color: #f0e68c; font-weight: bold }
@@ -14,10 +22,10 @@ pre .atv { color: #ffa0a0 } /* attribute value - pink */
 pre .dec { color: #98fb98 } /* decimal         - lightgreen */
 
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
-li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE; background:transparent;} /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: decimal; background:transparent; }
 /* Alternate shading for lines */
-li.L1,li.L3,li.L5,li.L7,li.L9 { }
+li.L1,li.L3,li.L5,li.L7,li.L9 { background:transparent; }
 
 @media print {
     pre.prettyprint { background-color: none }

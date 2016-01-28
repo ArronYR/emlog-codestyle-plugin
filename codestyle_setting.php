@@ -9,11 +9,13 @@ function plugin_setting(){
     require_once 'codestyle_config.php';
     $style = $_POST["style"]=="" ? "default": $_POST["style"];
     $numlines = $_POST["numlines"]=="" ? "no": $_POST["numlines"];
+    $jquery = $_POST["jquery"]=="" ? "no" : $_POST["jquery"];
     $on = $_POST["on"]=="" ? "no" : $_POST["on"];
     $newConfig = '<?php
 $config = array(
     "style" => "'.$style.'",
     "numlines" => "'.$numlines.'",
+    "jquery" => "'.$jquery.'",
     "on" => "'.$on.'",
 );';
     echo $newConfig;
@@ -47,6 +49,18 @@ function plugin_setting_view(){
                         <label>否</label>
                     </div>
                     <p>如果启用该插件，页面代码样式将被替换，如不需要选择不启用</p>
+                </li>
+                <li>
+                    <h4>是否加载jQuery</h4>
+                    <div class="radio">
+                        <input type="radio" name="jquery" value="yes"<?php if($config["jquery"] == 'yes'){echo ' checked="checked"';}?> />
+                        <label>加载</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="jquery" value="no"<?php if($config["jquery"]=='no'){echo ' checked="checked"';}?> />
+                        <label>不加载</label>
+                    </div>
+                    <p>如果模板或其他插件已经加载过jQuery，必须选择不加载，否则出错</p>
                 </li>
                 <li>
                     <h4>开启代码行号</h4>

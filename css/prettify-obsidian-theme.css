@@ -49,14 +49,24 @@
 {
     color: purple;
 }
+pre.prettyprint, code.prettyprint {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
 pre.prettyprint
 {
     border: 0px solid #888;
+    padding: 5px 0;
 }
 ol.linenums
 {
     margin-top: 0;
     margin-bottom: 0;
+    background:transparent;
 }
 .prettyprint {
     background: #000;
@@ -65,6 +75,7 @@ li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
 {
     color: #555;
     list-style-type: decimal;
+    background:transparent;
 }
 li.L1, li.L3, li.L5, li.L7, li.L9 {
     background: #111;
