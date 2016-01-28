@@ -1,6 +1,6 @@
 # Emlog-CodeStyle-Plugin
 
-继上次写完Emlog的主题MaterialTheme之后，写了这个代码高亮样式插件。适用于技术博客。
+继上次写完Emlog的主题[MaterialTheme](https://github.com/ArronYR/emlog-material-theme)之后，写了这个代码高亮样式插件。适用于技术博客。
 
 ## Preview
 
