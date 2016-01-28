@@ -1,6 +1,6 @@
 # Emlog-CodeStyle-Plugin
 
-继上次写完Emlog的主题MaterialTheme之后，写了这个代码代码高亮样式创建。技术博客必备。
+继上次写完Emlog的主题MaterialTheme之后，写了这个代码高亮样式插件。适用于技术博客。
 
 ## Preview
 
@@ -13,7 +13,7 @@
 
 ## Usage
 
-方式一：[Github](https://github.com/ArronYR/emlog-material-theme)，点击右方【Download ZIP】现在文件，将其移入`emlog`的`content/plugins/`目录下，进入网站后台，点击【插件】选项，点击小圆点开启`代码高亮样式插件 `即可。
+方式一：[Github](https://github.com/ArronYR/emlog-codestyle-plugin)，点击右方【Download ZIP】现在文件，将其移入`emlog`的`content/plugins/`目录下，进入网站后台，点击【插件】选项，点击小圆点开启`代码高亮样式插件 `即可。
 
 方式二：在网站后台的【应用中心】【插件】下载（确保`content/templates/`有写入权限）。
 
