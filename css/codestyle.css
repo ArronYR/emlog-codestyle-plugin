@@ -10,4 +10,8 @@
 .codestyle-container ul .radio{float:left;width:120px;}
 .codestyle-container ul .radio input{height:26px;line-height:26px;margin:5px;overflow:hidden; float:left;}
 .codestyle-container ul .radio label{float:left;}
-.codestyle-container ul .sl{margin:5px; font-size:13px; line-height:22px;}
+.codestyle-container ul .select{float:left;width:240px;}
+.codestyle-container ul .select select{height:26px;line-height:26px;margin:11px;overflow:hidden; float:left;}
+.codestyle-container ul .cs-image{text-align: center;padding-top: 10px;}
+.codestyle-container ul .cs-image img{width: 50%;}
+.codestyle-container ul .cs-tips{margin:5px; font-size:13px; line-height:22px;}
