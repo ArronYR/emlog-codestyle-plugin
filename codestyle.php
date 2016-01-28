@@ -41,9 +41,8 @@ function codestyle_menu(){
 }?>
 
 <?php
-    if (condition) {
-        # code...
+    if ($config['on'] == 'yes') {
+        addAction('index_footer','codestyle');
     }
-    addAction('index_footer','codestyle');
     addAction('adm_sidebar_ext', 'codestyle_menu');
 ?>
